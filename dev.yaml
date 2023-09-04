@@ -18,14 +18,14 @@ global:
     endpoint: '127.0.0.1:9000'
     auth:
       username: 'minio'
-      password: 'miniostorage'
+      password: '12341234'
   registry:
     pullSecretsName: image-regcred
     server: '127.0.0.1'
     auth:
       username: 'admin'
       password: '12341234'
-      email: 'kyh0703@nate.com'
+      email: 'test@nate.com'
   metric:
     enable: true
   services:
