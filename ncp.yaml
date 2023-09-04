@@ -1,0 +1,32 @@
+global:
+  env: 'ncp'
+  oracle:
+    uri: 'naver.com'
+    auth:
+      username: 'admin'
+      password: '12341234'
+  redis:
+    uri: 'naver.com'
+    auth:
+      username: 'admin'
+      password: '12341234'
+  kafka:
+    brokers: '172.16.31.6:9092,172.16.31.7:9092,172.16.31.8:9092'
+  jaeger:
+    traces: 'http://jaeger-collector.monitoring:14268/api/traces'
+  s3:
+    endpoint: 'private.naver.com'
+    auth:
+      username: 'admin'
+      password: '12341234'
+  registry:
+    pullSecretsName: image-regcred
+    server: 'private.naver.com'
+    auth:
+      username: 'admin'
+      password: '12341234'
+      email: 'kyh0703@nate.com'
+  metric:
+    enable: true
+  services:
+    api-quant: 'api-quant.core.svc.default.local:8080'

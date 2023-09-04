@@ -1,0 +1,32 @@
+global:
+  env: 'dev'
+  oracle:
+    uri: '127.0.0.1'
+    auth:
+      username: 'root'
+      password: '12341234'
+  redis:
+    uri: '127.0.0.1:6379'
+    auth:
+      username: 'admin'
+      password: '12341234'
+  kafka:
+    brokers: '127.0.0.1:9092'
+  jaeger:
+    traces: 'http://jaeger-collector.monitoring:14268/api/traces'
+  s3:
+    endpoint: '127.0.0.1:9000'
+    auth:
+      username: 'minio'
+      password: 'miniostorage'
+  registry:
+    pullSecretsName: image-regcred
+    server: '127.0.0.1'
+    auth:
+      username: 'admin'
+      password: '12341234'
+      email: 'kyh0703@nate.com'
+  metric:
+    enable: true
+  services:
+    api-quant: 'api-quant.core.svc.default.local:8080'
